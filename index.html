@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Leaderboard - Mediclinic</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="leaderboard">
+    <!-- Logo Section -->
+    <div class="logo-container">
+        <img src="https://mediclinicmiddleeast.s3.eu-north-1.amazonaws.com/MCSA%20Group-Logos-colours-01.png" alt="Mediclinic Logo" class="mediclinic-logo">
+    </div>
+
+    <div class="button-container">
+        <button id="facility-btn" class="active">Facility Leaderboard</button>
+        <button id="cluster-btn">Cluster Leaderboard</button>
+        
+        <!-- Month Selector Dropdown -->
+        <select id="month-selector"></select>
+    </div>
+
+    <!-- Top 3 Section -->
+    <div id="top-three" class="top-three">
+        <!-- This will be filled dynamically with JavaScript -->
+    </div>
+
+    <!-- Remaining Facilities Table -->
+    <table id="leaderboard-table">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Facility</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody id="leaderboard-body">
+            <!-- This will be filled dynamically with JavaScript -->
+        </tbody>
+    </table>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
